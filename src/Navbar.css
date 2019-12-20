@@ -1,0 +1,12 @@
+.nav-container {
+  padding-bottom: 50px;
+}
+
+.navbar .logo {
+  width: 30px;
+  height: 30px;
+}
+
+.bye {
+  color: red
+}
