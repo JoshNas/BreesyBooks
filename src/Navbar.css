@@ -5,8 +5,36 @@
 .navbar .logo {
   width: 30px;
   height: 30px;
+  margin-right: 7px;
 }
 
-.bye {
-  color: red
+.navbar {
+  background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .75)), url("img/bookShelf.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.navbar .brand {
+  color: #e3f2fd;
+  padding: 0 15px 0 3px;
+}
+
+.navbar .navbar-text {
+  color: #e3f2fd;
+}
+
+.navbar .navbar-brand {
+  color: #e3f2fd;
+}
+
+#navbarDropdown {
+  color: #e3f2fd;
+}
+
+
+.Button__button___vS7Mv{
+  background-color: #527FFF;
+  margin-left: 7px;
+  border-radius: 8px;
 }

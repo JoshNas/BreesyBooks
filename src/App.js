@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Amplify from 'aws-amplify';
-import awsconfig from './aws-exports';
-import { withAuthenticator, AmplifyTheme } from 'aws-amplify-react';
-import background from './img/background.jpg';
-import './App.css'
+import { withAuthenticator } from 'aws-amplify-react';
 import { Home } from './Home'
+import './App.css'
+import background from './img/background.jpg';
+import awsconfig from './aws-exports';
 
 Amplify.configure(awsconfig);
 
@@ -31,11 +31,12 @@ const MyTheme = {
     backgroundImage: `url(${background})`,
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'},
+    backgroundSize: 'cover',
+    height: '100vh',
+    paddingTop: 50},
   a: {color: "#007EB9"},
   button: { backgroundColor: "#527FFF" },
 }
-
 
 const Custom = {
   includeGreetings: false,
@@ -43,7 +44,5 @@ const Custom = {
   signUpConfig: SignUpConfig,
   usernameAttributes: 'email'
 }
-
-console.log(AmplifyTheme)
 
 export default withAuthenticator(App, Custom);

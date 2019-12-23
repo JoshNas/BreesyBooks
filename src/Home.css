@@ -1,7 +1,68 @@
 .homepage {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, 1)), url("img/bike.jpg");
+  background: linear-gradient(rgba(255,255,255,0.15), rgba(0,0,0,0.5)), url("img/wood.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.head {
+  background: transparent;
+}
+
+.welcome {
+  background: url("img/bookcover.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-top: 50px;
+  padding: 45px;
+}
+
+
+
+.welcome .attributes {
+  margin: 10% 0% 10% 0%;
+  color: white;
+  text-wrap: balance;
+  font-size: 1.75em;
+  line-height: 2em;
+}
+
+
+.findBooks {
+  margin: 50px;
+  padding: 45px;
+  background: url("img/woodfloor.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: white;
+}
+
+.findBooks:hover{
+  background: url("img/bookOpening.gif");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: black;
+}
+
+.findGroups {
+  margin: 50px;
+  padding: 45px;
+  background: url("img/woodfloor.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: white;
+}
+
+.findGroups:hover{
+  background: url("img/friends.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  transition: .5s;
+  color: black;
 }
