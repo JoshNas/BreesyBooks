@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css'
 import { Navbar } from './Navbar'
+import book from './img/book.png'
 
 
 export class Home extends Component {
@@ -10,11 +11,8 @@ export class Home extends Component {
         <Navbar />
         <div className="container justify-content-center">
           <div className="row">
-            <div className="col-md rounded welcome">
-              <p className="lead attributes text-center text-nowrap">Track your reading progress with your friends</p>
-              <p className="lead attributes text-center text-nowrap">Keep track of books you'd like to read</p>
-              <p className="lead attributes text-center text-nowrap">Rate books you've completed</p>
-              <p className="lead attributes text-center text-nowrap">Get reccomendations from your books and groups!</p>
+            <div className="col-md">
+              <img className="img-fluid book" src={book} alt="book"/>
             </div>
             <div className="col-sm">
               <div className="row">

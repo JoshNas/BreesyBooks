@@ -22,6 +22,11 @@
 
 .navbar .navbar-text {
   color: #e3f2fd;
+  margin-right: 15px;
+}
+
+.navbar .items:hover {
+  color: #527FFF
 }
 
 .navbar .navbar-brand {

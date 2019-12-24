@@ -10,28 +10,15 @@
   background: transparent;
 }
 
-.welcome {
-  background: url("img/bookcover.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  margin-top: 50px;
-  padding: 45px;
-}
-
-
-
-.welcome .attributes {
-  margin: 10% 0% 10% 0%;
-  color: white;
-  text-wrap: balance;
-  font-size: 1.75em;
-  line-height: 2em;
+.book {
+  width: 75%;
+  margin-top: 5%;
+  padding: 5%;
 }
 
 
 .findBooks {
-  margin: 50px;
+  margin: 60px;
   padding: 45px;
   background: url("img/woodfloor.jpg");
   background-position: center; /* Center the image */
@@ -65,4 +52,8 @@
   background-size: cover; /* Resize the background image to cover the entire container */
   transition: .5s;
   color: black;
+}
+
+.title {
+  font-family: "Inria Serif", serif;
 }
