@@ -1,0 +1,81 @@
+.about .top-section {
+  margin-top: 1%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img/social.jpg");
+
+  /* Set a specific height */
+  height: 600px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about {
+  margin: 5%;
+}
+
+.example-images {
+  height: 500px;
+  margin: 1%;
+  padding: 1%;
+}
+
+.progress-example {
+  /* The image used */
+  background-image: url("img/progress.png");
+  width: 75%;
+
+  overflow:hidden;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1%;
+}
+
+.messageboard-example {
+  background-image: url("img/messageboard.png");
+  width: 75%;
+
+  overflow:hidden;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.search-example {
+  background-image: url("img/search.png");
+  width: 75%;
+
+  overflow:hidden;
+  border-radius: 5px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 1%;
+}
+
+.start {
+  background-image: url("img/start.png");
+  width: 75%;
+
+  overflow:hidden;
+  border-radius: 5px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+}

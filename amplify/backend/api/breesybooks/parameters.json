@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "breesybooks",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authbreesybooks74f1456b",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

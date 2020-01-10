@@ -1,15 +1,26 @@
 {
-	"hosting": {
-		"S3AndCloudFront": {
-			"service": "S3AndCloudFront",
-			"providerPlugin": "awscloudformation"
-		}
-	},
 	"auth": {
-		"breesybooksafc17562": {
+		"breesybooks74f1456b": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": []
+		}
+	},
+	"api": {
+		"breesybooks": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authbreesybooks74f1456b"
+						}
+					}
+				}
+			}
 		}
 	}
 }

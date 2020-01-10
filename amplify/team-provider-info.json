@@ -1,19 +1,19 @@
 {
-    "booksenv": {
+    "breesyenv": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-breesybooks-booksenv-171901-authRole",
-            "UnauthRoleArn": "arn:aws:iam::720455262630:role/amplify-breesybooks-booksenv-171901-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::720455262630:role/amplify-breesybooks-booksenv-171901-authRole",
+            "AuthRoleName": "amplify-breesybooks-breesyenv-144733-authRole",
+            "UnauthRoleArn": "arn:aws:iam::720455262630:role/amplify-breesybooks-breesyenv-144733-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::720455262630:role/amplify-breesybooks-breesyenv-144733-authRole",
             "Region": "us-east-1",
-            "DeploymentBucketName": "amplify-breesybooks-booksenv-171901-deployment",
-            "UnauthRoleName": "amplify-breesybooks-booksenv-171901-unauthRole",
-            "StackName": "amplify-breesybooks-booksenv-171901",
-            "StackId": "arn:aws:cloudformation:us-east-1:720455262630:stack/amplify-breesybooks-booksenv-171901/91b6bbe0-22ad-11ea-9f3d-0eac0ccc6c9d",
-            "AmplifyAppId": "d2zmh8a0sjwc74"
+            "DeploymentBucketName": "amplify-breesybooks-breesyenv-144733-deployment",
+            "UnauthRoleName": "amplify-breesybooks-breesyenv-144733-unauthRole",
+            "StackName": "amplify-breesybooks-breesyenv-144733",
+            "StackId": "arn:aws:cloudformation:us-east-1:720455262630:stack/amplify-breesybooks-breesyenv-144733/e59ad490-29aa-11ea-984d-0e0e50fbc697",
+            "AmplifyAppId": "d2197we974td6j"
         },
         "categories": {
             "auth": {
-                "breesybooksafc17562": {}
+                "breesybooks74f1456b": {}
             }
         }
     }

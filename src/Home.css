@@ -6,10 +6,6 @@
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.head {
-  background: transparent;
-}
-
 .book {
   width: 75%;
   margin-top: 5%;
@@ -54,6 +50,9 @@
   color: black;
 }
 
-.title {
-  font-family: "Inria Serif", serif;
+
+@media (max-width:780px) {
+  img#homeBook {
+    display: none;
+  }
 }

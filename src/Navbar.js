@@ -6,10 +6,14 @@ import { Auth } from 'aws-amplify'
 
 export class Navbar extends Component {
   render() {
+    console.log(Auth.user.attributes)
+
     return (
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark" >
         <img src={logo} className="logo" alt="logo" />
-        <div className="lead brand">Breesy Books</div>
+        <div className="lead brand">
+          <a className="navbar-text items" href="/">Breesy Books</a>
+        </div>
           <button className="navbar-toggler tog" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

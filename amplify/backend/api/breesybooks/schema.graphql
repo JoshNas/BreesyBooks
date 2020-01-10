@@ -1,0 +1,31 @@
+type Group @model {
+  id: ID!
+  name: String!
+  owner: String!
+  members: [String]
+  books: [String]
+  posts: [Post] @connection(name: "GroupPosts")
+  photoBucket: String
+}
+type Post @model {
+  id: ID!
+  writer: String!
+  title: String!
+  content: String
+  group: Group @connection(name: "GroupPosts")
+}
+type User @model {
+  id: ID!
+  name: String!
+  books: [Book] @connection(name: "UserBooks")
+  groups: [String]
+}
+type Book @model {
+  id: ID!
+  reader: User @connection(name: "UserBooks")
+  title: String!
+  author: String
+  pageCount: Int
+  currentPage: Int
+  rating: Int
+}

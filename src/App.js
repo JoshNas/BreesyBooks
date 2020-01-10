@@ -3,12 +3,14 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Amplify from 'aws-amplify';
 import { withAuthenticator } from 'aws-amplify-react';
 import { Home } from './Home'
+import { Navbar } from './Navbar'
 import { About } from './About'
+import { GetBook } from './components/GetBook'
+import { NewGroup } from './components/CreateGroup'
 import './App.css'
 import background from './img/background.jpg';
 import awsconfig from './aws-exports';
@@ -18,14 +20,26 @@ Amplify.configure(awsconfig);
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Router>
+      <div>
+        <Navbar />
+        <Router>
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/newbook">
+              <GetBook />
+            </Route>
+            <Route path="/newgroup">
+              <NewGroup />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+
 
     );
   }

@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "breesybooksafc17562_identitypool_afc17562",
+    "identityPoolName": "breesybooks74f1456b_identitypool_74f1456b",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "breesyafc17562",
-    "userPoolName": "breesybooksafc17562_userpool_afc17562",
+    "resourceNameTruncated": "breesy74f1456b",
+    "userPoolName": "breesybooks74f1456b_userpool_74f1456b",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -18,7 +18,8 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-        "email"
+        "email",
+        "name"
     ],
     "userpoolClientGenerateSecret": true,
     "userpoolClientRefreshTokenValidity": 30,
@@ -28,9 +29,9 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "breesyafc17562_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "breesy74f1456b_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "breesybooksafc17562",
+    "resourceName": "breesybooks74f1456b",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -48,6 +49,11 @@
     "usernameAttributes": [
         "email"
     ],
+    "triggers": "{}",
     "userPoolGroupList": [],
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [],
     "dependsOn": []
 }
